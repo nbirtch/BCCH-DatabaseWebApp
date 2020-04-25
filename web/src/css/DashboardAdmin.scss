@@ -1,0 +1,76 @@
+@import "Constants";
+
+#dash-board-admin-container {
+  a {
+    text-decoration: none;
+  }
+
+  .dashboard-button {
+    display: block;
+    text-decoration: none;
+    margin: 30px auto;
+    width: 240px;
+    color: white;
+    text-align: center;
+    height: 60px;
+    line-height: 55px;
+    background-color: #f38020;
+    font-size: 20px;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+      transition-property: background-color;
+      transition-duration: 0.4s;
+      background-color: #f37000;
+    }
+  }
+
+  .negative-button {
+    margin: 30px auto;
+    width: 240px;
+    color: #f38020;
+    text-align: center;
+    border: 1px solid #f38020;
+    height: 60px;
+    line-height: 55px;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+      color: white;
+      transition-property: background-color;
+      transition-duration: 0.4s;
+      background-color: #f37000;
+    }
+  }
+
+  #dash-board-admin-main {
+    width: 100%;
+
+    .container {
+      width: 40%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color: white;
+      font-size: 50px;
+      margin: 30px auto;
+      color: #234361;
+      font-family: $site-font-family;
+      padding: 20px 25px;
+
+      .dash-board-username {
+        text-align: center;
+      }
+
+      .dash-board-greeting {
+        color: #f38020;
+        font-size: 60px;
+        margin: 10px 0 0 0;
+        font-family: Brush Script MT;
+      }
+    }
+  }
+}

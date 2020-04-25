@@ -1,0 +1,186 @@
+@import "Constants";
+
+#create-assess-container {
+  #create-assess-main {
+    background-color: white;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px 0;
+
+    .header-group {
+      padding: 0 25px;
+    }
+
+    .basic-section-info {
+      padding: 20px 25px;
+    }
+
+    .create-label {
+      font-size: 18px;
+      font-family: $site-font-family;
+      color: #234361;
+    }
+
+    .create-section-title {
+      .create-label {
+        padding: 0 25px 5px 25px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .create-section-common {
+      margin-bottom: 20px;
+
+      .delete-creation {
+        padding: 3px;
+        color: red;
+        cursor: pointer;
+        margin-left: 5px;
+
+        &:hover {
+          color: white;
+          background-color: red;
+          transition-property: background-color;
+          transition-duration: 0.4s;
+        }
+      }
+
+      .create-section-desc-container {
+        padding: 5px 25px;
+
+        .create-label {
+          font-size: 16px;
+          font-family: $site-font-family;
+          color: $site-color-strong;
+        }
+      }
+    }
+  }
+
+  #create-button {
+    width: 120px;
+    height: 60px;
+    background-color: $site-color-strong;
+    color: white;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 50px;
+    font-size: 36px;
+    text-align: center;
+    line-height: 56px;
+    right: 160px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    &:hover {
+      background-color: $site-color-hover;
+    }
+  }
+
+  .submit-button-group {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    align-self: end;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .primary-button {
+      width: 100px;
+      margin-right: 20px;
+      color: white;
+      text-align: center;
+      height: 40px;
+      line-height: 38px;
+      background-color: #f38020;
+      font-size: 18px;
+      border-radius: 5px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #f37000;
+        transition-property: background-color;
+        transition-duration: 0.4s;
+      }
+
+      &.disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+        opacity: 0.7;
+      }
+    }
+
+    .cancel-button {
+      width: 80px;
+      margin-right: 16px;
+      color: white;
+      text-align: center;
+      height: 40px;
+      line-height: 38px;
+      background-color: white;
+      color: #f38020;
+      border: solid 1px #f38020;
+      font-size: 18px;
+      border-radius: 5px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #f37000;
+        color: white;
+        transition-property: background-color;
+        transition-duration: 0.4s;
+      }
+    }
+  }
+}
+
+.create-item-menu {
+  padding: 35px 5px;
+
+  .type-control {
+    padding: 10px 25px;
+
+    .type-title {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-family: $site-font-family;
+      color: $site-color-strong;
+    }
+  }
+
+  .display-field {
+    padding: 10px 25px;
+
+    .display-label {
+      margin-bottom: 5px;
+      color: $site-color-strong;
+      font-size: 16px;
+    }
+  }
+
+  .add-primary-button {
+    margin: 30px auto;
+    width: 220px;
+    color: white;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f38020;
+    font-size: 20px;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+      transition-property: background-color;
+      transition-duration: 0.4s;
+      background-color: #f37000;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-longscreen) {
+  #create-assess-container {
+    #create-assess-main {
+      width: 800px;
+    }
+  }
+}

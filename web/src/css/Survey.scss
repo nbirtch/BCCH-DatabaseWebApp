@@ -1,0 +1,138 @@
+@import "Constants";
+#survey-portal-container {
+  #survey-title-container {
+    padding: 20px 25px 5px 25px;
+  }
+
+  #instruction-field {
+    padding: 10px 25px;
+  }
+
+  #question-container {
+    padding: 10px 25px;
+  }
+
+  .survey-question {
+    .general-fill {
+      box-shadow: inset 0 0 0 1px rgba(67, 90, 111, 0.3),
+        inset 0 1px 2px rgba(67, 90, 111, 0.14);
+      background-color: white;
+      border: none;
+      -webkit-appearance: none;
+      font-size: 12px;
+      height: 32px;
+      border-radius: 3px;
+      padding-right: 10px;
+      padding-left: 10px;
+      color: #425a70;
+      letter-spacing: 0;
+      line-height: 16px;
+      font-weight: 400;
+      font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol";
+      box-sizing: border-box;
+      overflow: visible;
+      margin: 0;
+      outline-offset: -2px;
+
+      &:focus {
+        z-index: 2;
+        outline: none;
+        box-shadow: inset 0 0 2px rgba(67, 90, 111, 0.14),
+          inset 0 0 0 1px #579ad9, 0 0 0 3px rgba(16, 112, 202, 0.14);
+      }
+
+      &.time-fill {
+        width: 80px;
+      }
+
+      &.num-fill {
+        width: 60px;
+      }
+    }
+
+    .answer-section {
+      padding: 3px 2px 10px 2px;
+
+      .range-input {
+        width: 280px;
+      }
+
+      .mcq-choices {
+        white-space: pre-wrap;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      .scale-text {
+        vertical-align: text-top;
+      }
+
+      .scale-label {
+        color: #425a70;
+        font-weight: 400;
+        font-size: 15px;
+        width: 30px;
+        height: 25px;
+        margin-left: 10px;
+        text-align: center;
+        vertical-align: bottom;
+        border-radius: 3px;
+        border: none;
+        box-shadow: inset 0 0 0 1px rgba(67, 90, 111, 0.3),
+          inset 0 1px 2px rgba(67, 90, 111, 0.14);
+      }
+
+      input[type="range"] {
+        -webkit-appearance: none;
+      }
+
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 18px;
+        height: 18px;
+        margin-top: -6px;
+        border: 0.5px solid #a7a7a7;
+        border-radius: 50%;
+        background: #f38020;
+      }
+
+      input[type="range"]:focus {
+        outline: none;
+      }
+
+      input[type="range"]::-webkit-slider-runnable-track {
+        height: 5px;
+        cursor: pointer;
+        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+        background: #fef3e9;
+      }
+    }
+
+    .question-desc-section {
+      padding: 10px 2px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  #survey-portal-container {
+    .survey-question {
+      .answer-section {
+        input[type="text"] {
+          width: 100%;
+        }
+        input.time-fill {
+          width: 80px;
+        }
+        input.num-fill {
+          width: 60px;
+        }
+        .range-input {
+          width: 60%;
+        }
+      }
+    }
+  }
+}

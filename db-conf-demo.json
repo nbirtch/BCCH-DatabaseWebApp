@@ -1,0 +1,8 @@
+{
+    "poolSize": 20,
+    "host": "319-bcch.mysql.database.azure.com",
+    "port": 3306,
+    "user": "bcch@319-bcch",
+    "password": "N4vx3BMK9Z@n6UT@3$",
+    "database": "BCCH_FUTURE_STAR"
+}

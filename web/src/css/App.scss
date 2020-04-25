@@ -1,0 +1,21 @@
+@import "Constants";
+
+.component-app {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  min-width: 1024px;
+  color: blue;
+}
+
+#content {
+  background-color: #fef3e9;
+  height: 100%;
+  overflow: auto;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .component-app {
+    min-width: 0;
+  }
+}

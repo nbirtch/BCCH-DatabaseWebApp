@@ -1,0 +1,5 @@
+id,name,age,gender,sex,date_created,is_admin,date_of_birth
+1,John Smith,53,M,M,2020/02/02,F,1998/04/12
+2,Jane Smith,15,F,F,2020/02/02,F,1956/01/03
+3,John Doe,35,M,M,2020/02/02,T,2008/12/12
+4,Jane Doe,43,F,F,2020/02/02,T,1977/07/07

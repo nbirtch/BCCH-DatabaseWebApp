@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "CommonJs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": false,
+    "target": "ES6",
+    "outDir": "server/target"
+  },
+  "include": [
+    "server/src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

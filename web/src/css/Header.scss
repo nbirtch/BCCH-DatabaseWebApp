@@ -1,0 +1,59 @@
+@import "Constants";
+
+#header {
+  width: 100%;
+  border-bottom: 8px solid #f38020;
+
+  .real-header-group {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+
+    #user-buttons-group {
+      width: 100%;
+
+      .button-group {
+        float: right;
+        margin-right: 10px;
+        margin-top: 33px;
+
+        .header-drop-down {
+          font-size: 20px;
+          background-color: #fef3e9;
+          cursor: pointer;
+          border: 2px solid #f38020;
+          &:hover {
+            background-color: #fde6d2;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-longscreen) {
+  #header {
+    .real-header-group {
+      width: 1180px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  #header {
+    .real-header-group {
+      width: 100%;
+      margin: 0;
+
+      #logo {
+        margin: 0 auto;
+      }
+
+      #user-buttons-group {
+        display: none;
+      }
+    }
+  }
+}

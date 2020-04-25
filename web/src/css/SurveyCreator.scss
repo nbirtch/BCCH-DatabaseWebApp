@@ -1,0 +1,234 @@
+@import "Constants";
+
+#create-survey-container {
+  #create-survey-main {
+    background-color: white;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px 0;
+
+    .header-group {
+      padding: 0 25px;
+    }
+
+    .basic-section-info {
+      padding: 20px 25px;
+    }
+
+    .create-label {
+      font-size: 18px;
+      font-family: $site-font-family;
+      color: #234361;
+    }
+
+    .create-section-common {
+      margin-bottom: 20px;
+
+      .delete-creation {
+        padding: 3px;
+        color: red;
+        cursor: pointer;
+        margin-left: 5px;
+
+        &:hover {
+          color: white;
+          background-color: red;
+          transition-property: background-color;
+          transition-duration: 0.4s;
+        }
+      }
+
+      .create-section-desc-container {
+        padding: 5px 25px;
+
+        .create-label {
+          font-size: 16px;
+          font-family: $site-font-family;
+          color: $site-color-strong;
+        }
+      }
+
+      .create-section-title {
+        .create-label {
+          padding: 0 25px 5px 25px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .add-question {
+          font-size: 14px;
+          display: block;
+          border-radius: 4px;
+          background-color: #f38020;
+          text-transform: uppercase;
+          text-align: center;
+          color: white;
+          width: 75px;
+          height: 25px;
+          line-height: 25px;
+          float: right;
+          margin-top: 4px;
+
+          &:hover {
+            cursor: pointer;
+            background-color: #f37000;
+          }
+        }
+      }
+    }
+  }
+
+  .submit-button-group {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    align-self: end;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .primary-button {
+      width: 100px;
+      margin-right: 20px;
+      color: white;
+      text-align: center;
+      height: 40px;
+      line-height: 38px;
+      background-color: #f38020;
+      font-size: 18px;
+      border-radius: 5px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #f37000;
+        transition-property: background-color;
+        transition-duration: 0.4s;
+      }
+    }
+
+    .cancel-button {
+      width: 80px;
+      margin-right: 16px;
+      color: white;
+      text-align: center;
+      height: 40px;
+      line-height: 38px;
+      background-color: white;
+      color: #f38020;
+      border: solid 1px #f38020;
+      font-size: 18px;
+      border-radius: 5px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #f37000;
+        color: white;
+        transition-property: background-color;
+        transition-duration: 0.4s;
+      }
+    }
+  }
+}
+
+.create-item-menu {
+  .display-field {
+    .scale-label {
+      color: #f38020;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+    .scale-input {
+      width: 50px;
+
+      &.min {
+        margin-right: 50px;
+      }
+    }
+
+    .mcq-label {
+      margin-bottom: 5px;
+      color: #f38020;
+      font-size: 16px;
+      display: inline-block;
+    }
+    .add-choice {
+      font-size: 12px;
+      display: block;
+      border-radius: 4px;
+      background-color: #f38020;
+      text-transform: uppercase;
+      text-align: center;
+      color: white;
+      width: 55px;
+      height: 20px;
+      line-height: 20px;
+      float: right;
+      margin-top: 3px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #f37000;
+      }
+    }
+
+    .choice-container {
+      .mcq-item {
+        position: relative;
+        margin-top: 10px;
+        .item-label {
+          position: absolute;
+          font-size: 16px;
+          color: #f38020;
+          top: 0;
+        }
+        .choice-statement {
+          width: calc(100% - 25px);
+          min-height: 50px;
+          margin-left: 25px;
+        }
+        .delete-choice {
+          position: absolute;
+          top: -8px;
+          right: -8px;
+          display: inline-block;
+          line-height: 18px;
+          font-size: 15px;
+          text-align: center;
+          border-radius: 10px;
+          width: 20px;
+          height: 20px;
+          background-color: #f38020;
+          color: white;
+          cursor: pointer;
+          margin-left: 5px;
+
+          &:hover {
+            background-color: #f37000;
+            transition-property: background-color;
+            transition-duration: 0.4s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.primary-button {
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+}
+
+.add-primary-button {
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+}
+
+@media (min-width: $breakpoint-longscreen) {
+  #create-survey-container {
+    #create-survey-main {
+      width: 800px;
+    }
+  }
+}
